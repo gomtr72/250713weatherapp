@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날씨 정보 앱</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>날씨 정보</h1>
+        <div class="search-box">
+            <input type="text" id="location-input" placeholder="도시 이름을 입력하세요">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="weather-info" id="weather-info">
+            <div class="weather-card">
+                <div class="location">
+                    <h2 id="location-name">위치</h2>
+                    <p id="local-time">현재 시간</p>
+                </div>
+                <div class="weather-details">
+                    <div class="weather-icon">
+                        <img id="weather-icon" src="" alt="날씨 아이콘">
+                    </div>
+                    <div class="temp-condition">
+                        <h2 id="temperature">--°C</h2>
+                        <p id="condition">날씨 상태</p>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <div class="info-item">
+                        <i class="fas fa-wind"></i>
+                        <span id="wind">-- km/h</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-tint"></i>
+                        <span id="humidity">--%</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-cloud-rain"></i>
+                        <span id="precipitation">-- mm</span>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast" id="forecast">
+                <!-- 일기 예보는 JavaScript로 추가됩니다 -->
+            </div>
+        </div>
+        <div class="error-message" id="error-message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
